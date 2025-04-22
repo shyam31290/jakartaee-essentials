@@ -30,3 +30,16 @@
         <failOnMissingWebXml>false</failOnMissingWebXml>
     </properties>
 </project>
+<build>
+  <plugins>
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-compiler-plugin</artifactId>
+      <version>3.11.0</version> <!-- or newer -->
+      <configuration>
+        <release>21</release> <!-- This is key -->
+      </configuration>
+    </plugin>
+  </plugins>
+</build>
+
