@@ -2,19 +2,19 @@ pipeline {
     agent any
 
     stages {
-        stage('compile') {
+        stage('compile') { //dev
             steps {
                 echo "compile the code"
                 sh "mvn compile"
             }
         }
-        stage('test') {
+        stage('test') { //dev
             steps {
                 echo "test the code"
                 sh "mvn test"
             }
         }
-        stage('package') {
+        stage('package') { //dev
             steps {
                 echo "package the code"
                 sh "mvn package"
